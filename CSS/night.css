@@ -31,3 +31,52 @@ body.night-theme .answer {
 .theme-button:hover {
     background: #DA70D6;
 }
+
+/* Night Mode Toggle Button */
+.container {
+    display: inline-block;
+    position: relative;
+}
+
+.toggle {
+    background-color: purple;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+
+.input {
+    display: none;
+}
+
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+}
+
+.icon--moon {
+    transform: scale(0);
+    color: black;
+}
+
+.icon--sun {
+    transition-delay: 200ms;
+    color: yellow;
+}
+
+/* When the toggle is active */
+#theme-switch:checked + .icon--sun {
+    transform: rotate(360deg) scale(0);
+}
+
+#theme-switch:checked ~ .icon--moon {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+}
+
