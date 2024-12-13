@@ -49,10 +49,15 @@ body {
     max-height: 0; /* Hidden by default */
     overflow: hidden; /* Hide content when not visible */
     opacity: 0;
-    transition: max-height 1s ease, opacity 1s ease; /* Add delay and smooth transition */
+    transition: max-height 1s ease, opacity 1s ease; /* Slow appearance */
 }
 
 .faq-item:hover .answer {
     max-height: 500px; /* Arbitrary large value to show content */
     opacity: 1;
+    transition: max-height 1s ease, opacity 1s ease; /* Keep appearance smooth */
+}
+
+.faq-item:not(:hover) .answer {
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Quicker disappearance */
 }
