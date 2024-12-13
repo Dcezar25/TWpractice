@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./CSS/style_contact.css">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo"><span>Stanca</span>George</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="cv.html">CV</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact <span>Me</span></h1>
+        <!--
+        <form action="mailto:george.stanca@stud.acs.upb.ro" method="get" class="contact-form">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="body">Mesagge:</label>
+            <textarea id="body" name="body" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        -->
+        <form action="mailto:george.stanca@stud.acs.upb.ro" method="get">
+            <div class="input-box">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" placeholder="Full Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" placeholder="Phone Number" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <label for="message">Your Message:</label>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com"></a>
+            <a href="https://www.twitter.com/home"></a>
+            <a href="https://www.gmail.com"></a>
+        </div>
+        <p class="bot">Stanca George-Alexandru 322AA</p>
+    </footer>
+</body>
+</html>

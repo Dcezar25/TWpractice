@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.95));
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    background: linear-gradient(to right, #8A2BE2, #DA70D6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px purple,
+                 0 0 50px purple;
+    transform: scale(1.1);
+}
+
+span {
+    background: linear-gradient(to right, #8A2BE2, #DA70D6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    background: linear-gradient(to right, #8A2BE2, #DA70D6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid purple;
+}
+
+.contactMe{
+    padding: 10px 28px;
+    background: white;
+    color: black;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contactMe:hover{
+    background: linear-gradient(to right, #8A2BE2, #DA70D6);
+    box-shadow: 0 0 25px purple;
+    color: white;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: white;
+}
+
+.about-content h1{
+    text-align: left;
+    color: black;
+    font-size: 42px;
+}
+
+.about-content h2{
+    text-align: left;
+    color: black;
+    font-size: 42px;
+}
+
+.about-content h3{
+    font-size: 32px;
+    color: black;
+}
+
+.about-content p{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;   
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: black;
+    border: 2px solid purple;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px purple, 0 0 10px purple;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: purple;
+    border: 2px solid purple;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 35px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: black;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid purple;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .bot{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+}
